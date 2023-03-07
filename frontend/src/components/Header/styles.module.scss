@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContent {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--dark);
+
+  button {
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+    color: var(--dark);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .headerContent {
+    width: 100%;
+  }
+}

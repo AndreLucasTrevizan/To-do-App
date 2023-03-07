@@ -1,0 +1,123 @@
+.centeredContainer {
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalidInput {
+  width: 100%;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: 1px solid red;
+  padding-left: 2rem;
+}
+
+.formContainer {
+  background-color: var(--white);
+  width: 30%;
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+}
+
+.link {
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: 1px solid #EBEBEB;
+  padding-left: 2rem;
+}
+
+.inputWrapper {
+  width: 100%;
+
+  div {
+    padding-top: 0.2rem;
+    color: red;
+  }
+}
+
+.formHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.back {
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.icon {
+  position: relative;
+  top: 2rem;
+  left: 0.5rem;
+}
+
+@media (max-width: 1080px) {
+  .formContainer {
+    background-color: var(--white);
+    width: 70%;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .formContainer {
+    background-color: var(--white);
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+}
